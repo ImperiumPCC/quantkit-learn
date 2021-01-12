@@ -26,26 +26,31 @@ repos:
         types: [file, python]
         language: system
         entry: black
+        files: ^qklearn
 
       - id: isort
         name: isort
         types: [file, python]
         language: system
         entry: isort
+        files: ^qklearn
 
       - id: flake8
         name: Flake8
         types: [file, python]
         language: system
         entry: flake8
+        files: ^qklearn
 
       - id: pylint-src
         name: pylint on src*
         types: [file, python]
         language: system
         entry: pylint --disable=too-few-public-methods,logging-fstring-interpolation,f-string-without-interpolation,no-member,broad-except --enable=W0614
+        files: ^qklearn
 
       - id: pylint-tests
         name: pylint on tests*
         language: system
         entry: pylint --disable=invalid-name,missing-docstring,too-many-function-args,unused-variable,fixme,abstract-class-instantiated,no-self-use,too-few-public-methods
+        files: ^tests
