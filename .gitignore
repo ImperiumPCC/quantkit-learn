@@ -139,3 +139,4 @@ __pycache__/
 \@eaDir/
 *.vuerd.json
 __DATA/
+poetry.lock
